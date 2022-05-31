@@ -35,4 +35,9 @@
   height: 10vh;
   width: 100%;
   background-color: dimgray;
+}
+.nav__checkboxes {
+  display: flex;
+  justify-content: space-evenly;
+  width: 30vw;
 }/*# sourceMappingURL=styles.css.map */

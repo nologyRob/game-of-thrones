@@ -1,5 +1,6 @@
 import charactersArr from "./data/data.js";
 const characterContainer = document.querySelector(".character-container")
+const searchInput = document.querySelector("#search")
 
 const createCards = (array) => {
   const characterHTML = array.map((character) => {
@@ -18,5 +19,20 @@ const createCards = (array) => {
   return characterHTML
 }
 
+const getSearchInput = (event) => {
+  return event.target.value
+}
+
+const filterBySearch = (event) => {
+  const searchTerm = getSearchInput(event)
+ 
+  const filteredArray = charactersArr.filter((character) => {
+
+    return character.firstName.includes(searchTerm)
+  })
+  characterContainer.innerHTML = createCards(filteredArray)
+}
+
 const characterCards = createCards(charactersArr)
 characterContainer.innerHTML = characterCards
+searchInput.addEventListener("input", filterBySearch)
