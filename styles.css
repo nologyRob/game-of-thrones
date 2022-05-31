@@ -1,0 +1,38 @@
+.character-card {
+  margin: 5vh 0px;
+  border: 1px solid grey;
+  height: 40vh;
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.character-card__image {
+  height: 20vh;
+  width: auto;
+}
+
+.character-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 10vh;
+  width: 100%;
+  background-color: dimgray;
+}/*# sourceMappingURL=styles.css.map */
